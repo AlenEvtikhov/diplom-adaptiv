@@ -11,179 +11,152 @@
 <body>
   <!--HEADER-->
   <header class="header">
-    <div class="container">
-      <a href="#0" class="header-logo">
-        <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="Логотип блога">
-      </a>
+    <div class="header-frame">
+      <div class="container">
+        <a href="#0" class="logo">
+          <img src="/svg/noemi-logo.svg" alt="Логотип блога">
+        </a>
 
-      <!---MENU--->
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-list-item">
-            <a href="#0" class="menu-link">главная</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="#0" class="menu-link">посты</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="#0" class="menu-link">статьи</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="#0" class="menu-link">теги</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="#0" class="menu-link">темы</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="#0" class="menu-link">контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <!--MENU-->
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="#0" class="menu-link">главная</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#0" class="menu-link">посты</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#0" class="menu-link">статьи</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#0" class="menu-link">теги</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#0" class="menu-link">темы</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#0" class="menu-link">контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="header-title">блог о творчестве, спорте, и образе жизни
+      </h1>
     </div>
-
-    <!--TITTLE-->
-    <h1 class="welcome-title">блог о творчестве, спорте,<br> и образе жизни
-    </h1>
   </header>
 
   <!--POPUP-->
-  <div class="hidden">
-  <div class="popup">
-    <div class="popup-container">
-      <header class="popup-header">
-        <h2 class="popup-title">ваш фидбек</h2>
-      </header>
-      
-      <div class="popup-content">
-        <div class="form-row">
-          <label class="popup-group">
-            <span class="popup-form-hint">Как часто вы заходите на сайт?</span>
-            <select class="select">
-              <option>Почти каждый день</option>
-            </select>
+  <div class="popup_hidden">
+    <div class="popup_container">
+      <form class="popup-form">
+        <div>
+          <h3 class="popup-title">ваш фидбек</h3>
+        </div>
+        <label class="select-group">
+          <span class="label-text">Как часто вы заходите на сайт?</span>
+          <select class="popup-select">
+            <option value="every-day" selected>Почти каждый день</option>
+            <option value="day">Раз в несколько дней</option>
+            <option value="week">Раз в несколько недель</option>
+            <option value="year">Несколько раз год</option>
+          </select>
+        </label>
+        <div class="radiobutton-group">
+          <span class="label-text">Вы подписаны на e-mail рассылку?</span>
+          <label class="checkbox-group"><input class="popup-radiobutton" type="radio" name="mailling" value="yes"><span
+              class="radiobutton-text">Да</span>
+          </label>
+          <label class="checkbox-group">
+            <input class="popup-radiobutton" type="radio" name="mailling" value="not"><span
+              class="radiobutton-text">Нет</span>
           </label>
         </div>
-        <div class="form-row">
-          <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
-          <div class="radio">
-          <label class="radio-group">
-            <input type="radio" class="radio" name="radio-group">
-            <span class="radio-group-text">Да</span>
-          </label>
-          <label class="radio-group">
-            <input type="radio" class="radio" name="radio-group">
-            <span class="radio-group-text">Нет</span>
-          </label>
+        <label class="textarea-group">
+          <span class="label-text">Расскажите, какой контент вы хотели бы видеть на нашем
+            сайте?</span>
+          <textarea class="popup-textarea" placeholder="Может, больше рецептов?" required>
+          </textarea>
+        </label>
+        <div>
+          <button class="popup-button">Отправить</button>
         </div>
-        </div>
-        <div class="form-row">
-          <span class="form-hint">Расскажите какой контент вы хотели бы видеть<br> на нашем сайте?
-            <textarea class="window" placeholder="Может, больше рецептов?"></textarea>
-        </div>
-        <div class="form-row">
-          <button class="button-popup">отправить</button>
-        </div>
-      </div>
+      </form>
+      <button class="popup-close" type="button">
+        <span class="popup_buttontext">Закрыть</span>
+      </button>
     </div>
   </div>
-</div>
-
 
   <!--ACTUAL-->
   <section class="actual">
     <h2 class="actual-header">сейчас в тренде</h2>
     <div class="trends">
-      <article class="popular">
-        <div class="popular-image1">
-          <a href="#"></a>
+      <article class="trend card-first">
+        <div class="trend-about">
+          <ul class="trend-list">
+            <li class="trend-list-item">
+              <a href="#0" class="trend-tag">lifestyle</a>
+            </li>
+            <li class="trend-list-item">
+              <a href="#0" class="trend-tag">interior</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a href="#0" class="trend-title-link">cейчас в тренде: сад на подоконнике</a>
+          </h3>
         </div>
-        <div class="popular-card">
-          <header class="popular-card-info">
-            <div class="popular-card-tag">
-              <ul class="tags">
-                <li class="tags-item">
-                  <a href="#0">lifestyle</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#0">interior</a>
-                </li>
-              </ul>
-            </div>
-            <h3 class="popular-card-title">
-              <a href="#0">cейчас в тренде: сад на подоконнике</a>
-            </h3>
-        </div>
-        </header>
       </article>
-      <article class="popular">
-        <div class="popular-image2">
-          <a href="#"></a>
+      <article class="trend card-second">
+        <div class="trend-about">
+          <ul class="trend-list">
+            <li class="trend-list-item">
+              <a href="#0" class="trend-tag">food</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a href="#0" class="trend-title-link">сыры на красивых
+              картинках из интернета:
+              какие они на вкус?</a>
+          </h3>
         </div>
-        <div class="popular-card">
-          <header class="popular-card-info">
-            <div class="popular-card-tag">
-              <ul class="tags">
-                <li class="tags-item">
-                  <a href="#0">food</a>
-                </li>
-              </ul>
-              <h3 class="popular-card-title">
-                <a href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a>
-              </h3>
-            </div>
-        </div>
-        </header>
       </article>
-      <article class="popular">
-        <div class="popular-image3">
-          <a href="#"></a>
+
+      <article class="trend card-third">
+        <div class="trend-about">
+          <ul class="trend-list">
+            <li class="trend-list-item">
+              <a href="#0" class="trend-tag">lifestyle</a>
+            </li>
+            <li class="trend-list-item">
+              <a href="#0" class="trend-tag">travel</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a href="#0" class="trend-title-link">собираемся в первый поход в горы</a>
+          </h3>
         </div>
-        <div class="popular-card">
-          <header class="popular-card-info">
-            <div class="popular-card-tag">
-              <ul class="tags">
-                <li class="tags-item">
-                  <a href="#0">lifestyle</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#0">travel</a>
-                </li>
-              </ul>
-              <h3 class="popular-card-title">
-                <a href="#0">собираемся в первый поход в горы</a>
-              </h3>
-            </div>
-        </div>
-        </header>
       </article>
-      <article class="popular">
-        <div class="popular-image4">
-          <a href="#"></a>
+      <article class="trend card-fourth">
+        <div class="trend-about">
+          <ul class="trend-list">
+            <li class="trend-list-item">
+              <a href="#0" class="trend-tag">lifestyle</a>
+            </li>
+            <li class="trend-list-item">
+              <a href="#0" class="trend-tag">travel</a>
+            </li>
+          </ul>
+          <h3 class="trend-title">
+            <a href="#0" class="trend-title-link">собираемся в первый поход в горы</a>
+          </h3>
         </div>
-        <div class="popular-card">
-          <header class="popular-card-info">
-            <div class="popular-card-tag">
-              <ul class="tags">
-                <li class="tags-item">
-                  <a href="#0">food</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#0">health</a>
-                </li>
-              </ul>
-              <h3 class="popular-card-title">
-                <a href="#0">cейчас в тренде: сколько витаминов лимонах?</a>
-              </h3>
-            </div>
-        </div>
-        </header>
       </article>
   </section>
 
   <div class="column">
 
     <!--CONTENT-->
-
     <main class="content">
       <article class="post">
         <div class="post_image">
@@ -202,7 +175,6 @@
                   <a href="#0">health</a>
                 </li>
               </ul>
-
             </div>
             <h3 class="post-title">
               <a href="#0"> 10 мест,ради которых стоит проснуться на рассвете</a>
@@ -217,9 +189,7 @@
             </p>
           </div>
         </div>
-
       </article>
-
       <article class="post">
         <div class="post_image">
           <a href="#0">
@@ -251,7 +221,6 @@
           </div>
         </div>
       </article>
-
       <article class="post">
         <div class="post_image">
           <a href="#0">
@@ -280,7 +249,6 @@
           </div>
         </div>
       </article>
-
       <article class="post">
         <div class="post_image">
           <a href="#0">
@@ -314,7 +282,6 @@
           </div>
         </div>
       </article>
-
       <article class="post">
         <div class="post_image">
           <a href="#0">
@@ -351,7 +318,6 @@
           </div>
         </div>
       </article>
-
       <article class="post">
         <div class="post_image">
           <a href="#0">
@@ -382,7 +348,6 @@
           </div>
         </div>
       </article>
-
       <article class="post">
         <div class="post_image">
           <a href="#0">
@@ -417,8 +382,6 @@
     </main>
 
     <!--SIDEBAR-->
-
-    <!--NEWS-->
     <aside class="sidebar">
       <section class="news-list">
         <h2 class="news-tittle">новые посты</h2>
@@ -436,7 +399,6 @@
             </h3>
           </div>
         </article>
-
         <article class="last">
           <div class="last_image">
             <a href="#0">
@@ -450,7 +412,6 @@
               <a href="#0">йога для домашних</a></h3>
           </div>
         </article>
-
         <article class="last">
           <div class="last_image">
             <a href="#0">
@@ -465,7 +426,6 @@
               </a></h3>
           </div>
         </article>
-
         <article class="last">
           <div class="last_image">
             <a href="#0">
@@ -481,7 +441,6 @@
               </a></h3>
           </div>
         </article>
-
         <article class="last">
           <div class="last_image">
             <a href="#0">
@@ -540,12 +499,12 @@
       <section class="themes">
         <h2 class="themes-header">темы</h2>
         <ul class="themes-list">
-          <li><a href="#0" class="themes-link">Красота</a> <span><sup>12</sup></span></li>
-          <li><a href="#0" class="themes-link">Здоровье</a><span><sup>4</sup></span></li>
-          <li><a href="#0" class="themes-link">Образ жизни</a><span><sup>145</sup></span></li>
-          <li><a href="#0" class="themes-link">Музыка</a><span><sup>28</sup></span></li>
-          <li><a href="#0" class="themes-link">Спорт</a><span><sup>62</sup></span></li>
-          <li><a href="#0" class="themes-link">Йога</a><span><sup>8</sup></span></li>
+          <li><a href="#0" class="themes-link">Красота</a> <span>12</span></li>
+          <li><a href="#0" class="themes-link">Здоровье</a> <span>4</span></li>
+          <li><a href="#0" class="themes-link">Образ жизни</a> <span>145</span></li>
+          <li><a href="#0" class="themes-link">Музыка</a> <span>28</span></li>
+          <li><a href="#0" class="themes-link">Спорт</a> <span>62</span></li>
+          <li><a href="#0" class="themes-link">Йога</a> <span>8</span></li>
         </ul>
       </section>
     </aside>
@@ -584,7 +543,6 @@
             </div>
             <button class="product-button" type="button">в магазин</button>
           </div>
-
       </article>
       <article class="product">
         <div class="product-image3">
@@ -601,7 +559,6 @@
             </div>
             <button class="product-button" type="button">в магазин</button>
           </div>
-
       </article>
     </div>
   </section>
