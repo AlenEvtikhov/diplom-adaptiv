@@ -161,7 +161,7 @@
       <article class="post">
         <div class="post_image">
           <a href="#0">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg"
+            <img src="img/last-post1.jpg"
               alt="Человек входит в воду">
           </a>
         </div>
@@ -193,7 +193,7 @@
       <article class="post">
         <div class="post_image">
           <a href="#0">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg"
+            <img src="img/last-post2.jpg"
               alt="Девушка занимается йогой у моря">
           </a>
         </div>
@@ -210,7 +210,7 @@
               </ul>
             </div>
             <h3 class="post-title">
-              <a href="#0">йога для начинающих в домашних условиях</a>
+              <a href="#0" class="post-title">йога для начинающих в домашних условиях</a>
             </h3>
             <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
             <address class="post-author ">Неизвестный автор</address>
@@ -224,7 +224,7 @@
       <article class="post">
         <div class="post_image">
           <a href="#0">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg"
+            <img src="img/last-post3.jpg"
               alt="Девушка сидит на плечах у человека">
           </a>
         </div>
@@ -252,7 +252,7 @@
       <article class="post">
         <div class="post_image">
           <a href="#0">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
+            <img src="img/last-post4.jpg"
               alt="Готовая еда на столе">
           </a>
         </div>
@@ -285,7 +285,7 @@
       <article class="post">
         <div class="post_image">
           <a href="#0">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg"
+            <img src="img/last-post5.jpg"
               alt="Подушка с надписью">
           </a>
         </div>
@@ -318,67 +318,7 @@
           </div>
         </div>
       </article>
-      <article class="post">
-        <div class="post_image">
-          <a href="#0">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Люди в горах">
-          </a>
-        </div>
-        <div class="post_card">
-          <header class="post_card-info">
-            <div class="post-tag">
-              <ul class="tags">
-                <li class="tags-item">
-                  <a href="#0">travel</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#0">lifestyle</a>
-                </li>
-              </ul>
-            </div>
-            <h3 class="post-title">
-              <a href="#0">как первый раз отправиться в горы?</a>
-            </h3>
-            <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
-            <address class="post-author ">Неизвестный автор</address>
-          </header>
-          <div class="post_card-description">
-            <p>Для начала нужно определиться, в каком формате пройдет ваше путешествие. Это зависит от многих факторов,
-              не только от ваших желаний и интересов.</p>
-          </div>
-        </div>
-      </article>
-      <article class="post">
-        <div class="post_image">
-          <a href="#0">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
-              alt="Готовая еда на столе">
-          </a>
-        </div>
-        <div class="post_card">
-          <header class="post_card-info">
-            <div class="post-tag">
-              <ul class="tags">
-                <li class="tags-item">
-                  <a href="#0">lifestyle</a>
-                </li>
-                <li class="tags-item">
-                  <a href="#0">food</a>
-                </li>
-              </ul>
-            </div>
-            <h3 class="post-title">
-              <a href="#0">наукоёмкий подход к кулинарии</a>
-            </h3>
-            <time datetime="2019-06-10" class="post-date">10 июня 2019</time>
-            <address class="post-author ">Неизвестный автор</address>
-          </header>
-          <div class="post_card-description">
-            <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию
-              еды.</p>
-          </div>
-        </div>
-      </article>
+
     </main>
 
     <!--SIDEBAR-->
@@ -515,13 +455,16 @@
     <h2 class="catalog-header">наши изделия</h2>
     <div class="products">
       <article class="product">
-        <div class="product-image1">
-          <a href="#0"></a>
-        </div>
+        <picture class="product-image">
+          <source media="(max-width: 640px)" srcset="img/shop-item-desk1.jpg" alt="Подушка">
+            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet1.jpg" alt="Подушка">
+            <source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg" class="shop-image" alt="Подушка">
+            <img src="img/shop-item-desk1.jpg" alt="Подушка">
+        </picture>
         <div class="product-info">
           <h3 class="product-name">подушки на диван</h3>
           <div class="product-description">Набор из двух подушек с модными принтами. Видео о создании <a
-              href="#0">здесь</a>.</div>
+              href="#0">здесь</a></div>
           <div class="product-content">
             <div class="product-prices">
               <span class="product-prices product-old-price">1000 ₽</span>
@@ -530,9 +473,12 @@
             <button class="product-button" type="button">в магазин</button>
       </article>
       <article class="product">
-        <div class="product-image2">
-          <a href="#0"></a>
-        </div>
+        <picture>
+          <source media="(max-width: 640px)" srcset="img/shop-item-mobilet2.jpg" alt="Кукла Зайчик">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet2.jpg" alt="Кукла Зайчик">
+          <source media="(min-width: 1201px)" srcset="img/shop-item-desk2.jpg" alt="Кукла Зайчик">
+          <img src="img/shop-item-desk2.jpg" alt="Кукла Зайчик">
+        </picture>
         <div class="product-info">
           <h3 class="product-name">кукла "зайчик"</h3>
           <div class="product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a
@@ -545,9 +491,12 @@
           </div>
       </article>
       <article class="product">
-        <div class="product-image3">
-          <a href="#0"></a>
-        </div>
+        <picture>
+          <source media="(max-width: 640px)" srcset="img/shop-item-mobilet3.jpg" alt="Шестиугольник рамка">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet3.jpg"  alt="Шестиугольник рамка">
+          <source media="(min-width: 1201px)" srcset="img/shop-item-desk3.jpg" alt="Шестиугольник рамка">
+          <img src="img/shop-item-desk3.jpg" alt="Шестиугольник рамка">
+        </picture>
         <div class="product-info">
           <h3 class="product-name">шестиугольная рамка</h3>
           <div class="product-description">Необычная рамка для украшения дома из видео <a href="#0">«Как сделать рамку

@@ -5,14 +5,14 @@
 
 @font-face {
 	font-family: "Open Sans";
-	src: url(/fonts/OpenSans-Regular.ttf);
+	src: url(fonts/OpenSans-Regular.ttf);
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Open Sans";
-	src: url(/fonts/OpenSans-Bold.ttf);
+	src: url(fonts/OpenSans-Bold.ttf);
 	font-weight: 700;
 	font-style: normal;
 }
@@ -32,7 +32,7 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top: 28px;
-		min-height: 449px;
+		padding-bottom: 130px;
 		width: 100%;
 		position: relative;
 	}
@@ -91,11 +91,17 @@ body {
 	align-items: center;
 	position: relative;
 	z-index: 1;
+	text-transform: uppercase;
+	font-size: 13px;
 }
 
 .menu-link {
 	text-decoration: none;
 	color: #ffffff;
+}
+
+.menu-link:hover {
+	border-bottom: 2px solid white;
 }
 
 .menu-list-item:nth-child(n+2) {
@@ -281,7 +287,7 @@ body {
 @media (min-width: 1200px) {
 	.trend {
 		width: 25%;
-		height: 320px;
+		min-height: 320px;
 	}
 }
 
@@ -347,11 +353,20 @@ body {
 	text-decoration: none;
 }
 
+.trend-tag:hover{
+	text-decoration: underline;
+	color: #b59f5b;
+}
+
 .trend-title-link {
 	color: #ffffff;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+.trend-title-link:hover{
+	color: #b59f5b;
 }
 
 .popular-card-title a {
@@ -398,8 +413,6 @@ body {
 @media (min-width: 1200px) {
 	.content {
 		width: 890px;
-		display: flex;
-		flex-direction: column;
 	}
 }
 
@@ -418,7 +431,6 @@ body {
 	.post_image {
 		background-color: #eff6f1;
 		width: 381px;
-		height: 294px;
 	}
 }
 
@@ -445,7 +457,11 @@ body {
 	text-decoration: none;
 }
 
-.tags-item:nth-child(odd) {
+.tags-item:hover{
+	border-bottom: 1px solid #b59f5b;
+}
+
+.tags-item:nth-child(n) {
 	margin-right: 20px;
 }
 
@@ -455,6 +471,10 @@ body {
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.post-title a:hover{
+	color: #b59f5b;
 }
 
 .post-title a {
@@ -481,7 +501,6 @@ body {
 	.post_card-description {
 		margin-top: 30px;
 		font-size: 15px;
-		line-height: 1.47;
 	}
 }
 
@@ -490,8 +509,6 @@ body {
 @media (min-width: 1200px) {
 	.sidebar {
 		width: 271px;
-		display: flex;
-		flex-direction: column;
 	}
 }
 
@@ -546,6 +563,10 @@ main {
 	color: #000000;
 }
 
+.last-tittle a:hover{
+	color: #b59f5b;
+}
+
 .last:not(last-child) {
 	margin-bottom: 22px;
 }
@@ -578,7 +599,8 @@ main {
 	right: 0;
 }
 
-.search:after {
+
+.button-search:after{
 	content: "";
 	background-image: url(svg/search.svg);
 	background-size: cover;
@@ -593,9 +615,27 @@ main {
 	width: 223px;
 }
 
+.field:focus {
+	outline: 1px solid #b59f5b;
+ }
+ .field-subscribe:hover{
+	outline: none;
+	border: 1px solid #b59f5b;
+ }
+
 .visually-hidden{
 	display: none;
 }
+
+.button-search:hover {
+	background-color: #323232;
+}
+
+.button-subscribe:hover{
+	background-color: #323232;
+}
+
+
 /*SUBSCRIBE*/
 
 .subscribe {
@@ -682,14 +722,6 @@ main {
 	margin-top: 20px;
 }
 
-.tags-list li:nth-child(3) {
-	padding-right: 10px;
-}
-
-.tags-list:nth-child(3n) {
-	padding-right: 10px;
-}
-
 .tags-link {
 	display: block;
 	text-decoration: none;
@@ -699,6 +731,12 @@ main {
 	font-weight: 700;
 	border: solid 3px #f4f3f1;
 	padding: 3px 5px;
+	margin-right: 5px;
+   margin-top: 5px;
+}
+
+.tags-link:hover{
+	border: 2px solid #b59f5b;
 }
 
 /*<!--THEMES-->*/
@@ -744,6 +782,10 @@ main {
 	line-height: 3.36;
 }
 
+.themes-link:hover{
+	color: #b59f5b;
+}
+
 .themes-list span {
 	color: #b59f5b;
 }
@@ -755,24 +797,6 @@ sup {
 }
 
 /*PRODUCTS*/
-
-.product-image1 {
-	background-image: url(img/shop-item-desk1.jpg);
-	width: 300px;
-	height: 204px;
-}
-
-.product-image2 {
-	background-image: url(img/shop-item-desk2.jpg);
-	width: 300px;
-	height: 204px;
-}
-
-.product-image3 {
-	background-image: url(img/shop-item-desk3.jpg);
-	width: 300px;
-	height: 204px;
-}
 
 .catalog-header {
 	text-align: center;
@@ -834,6 +858,10 @@ sup {
 	color: #fff;
 }
 
+.product-button:hover{
+	background-color: #323232;
+}
+
 .product:nth-child(-2n+2)>.product-content>.product-prices {
 	margin-top: 15px;
 }
@@ -882,30 +910,29 @@ sup {
 
 
 /*FOOTER*/
+
+.page-footer{
+	margin-top: 85px;
+}
 .page-footer-inner {
 	width: 1200px;
-	height: 83px;
 	margin: 0 auto;
 	background-color: #f4f7f6;
-	margin-top: 60px;
 }
 
 .socials {
 	display: flex;
 	justify-content: center;
 	padding-top: 30px;
+	padding-bottom: 10px;
 	list-style: none;
 	margin: 0;
 }
 
 .socials-link {
 	display: inline-block;
-	padding: 10px;
-}
-
-.socials-link {
-	width: 25px;
-	height: 25px;
+	width: 35px;
+	height: 35px;
 	background-size: 20px;
 }
 
